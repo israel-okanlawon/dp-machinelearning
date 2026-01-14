@@ -6,7 +6,7 @@ st.info('This is app is built on machine learning model')
 
 with st.expander('Data'):
   st.write('**Raw Data**')
-  df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/087cb5383af3b09e68f6eeb00dea8819c1340de0/penguins_size.csv')
+  df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/087cb5383af3b09e68f6eeb00dea8819c1340de0/penguins_cleaned.csv')
   df
 
   st.write('**X**')
@@ -16,3 +16,7 @@ with st.expander('Data'):
   st.write('**y**')
   y = df['species']
   y
+
+with st.expander('Data Visualization'):
+  # "species","island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex"
+  st.scatter_chart(data=df, x='bill_length_mm', y='body_mass_g', color='species')

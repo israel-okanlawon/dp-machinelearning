@@ -8,3 +8,11 @@ with st.expander('Data'):
   st.write('**Raw Data**')
   df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/087cb5383af3b09e68f6eeb00dea8819c1340de0/penguins_size.csv')
   df
+
+st.write('**X**')
+X = df.drop('species')
+X
+
+st.write('**y**')
+y = df['species]
+y

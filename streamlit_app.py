@@ -53,5 +53,6 @@ with st.expander('Input Features'):
 
 
 # Encoding
-# encode = ['island', 'gender']
-# df_penguins = pd.get_dummies(input_penguins, prefix=encode)
+encode = ['island', 'gender']
+df_penguins = pd.get_dummies(input_penguins, prefix=encode)
+df_penguins

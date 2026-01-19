@@ -54,6 +54,7 @@ with st.expander('Input Features'):
   input_df
   st.write('**Combined penguine data**')
   input_penguins
+  input_row
 
 
 

@@ -58,8 +58,9 @@ def target_encode(val):
 
 y = y_raw.apply(target_encode)
 y = y.rename(columns={'species': 'new_species'})
-y_compare = pd.concat([y, y_raw], axis=1)
-y_compare
+y
+# y_compare = pd.concat([y, y_raw], axis=1)
+# y_compare
 
 
 with st.expander('Input Features'):

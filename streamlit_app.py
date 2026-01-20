@@ -57,7 +57,7 @@ def target_encode(val):
   return target_mapper[val]
 
 y = y_raw.apply(target_encode)
-y_compare = pd.concat([y, y_raw], axis=1)
+y_compare = pd.concat([y, y_raw], axis=0)
 y_compare
 
 

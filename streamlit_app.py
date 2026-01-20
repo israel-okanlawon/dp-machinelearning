@@ -58,7 +58,7 @@ def target_encode(val):
 
 y = y_raw.apply(target_encode)
 # y
-y_compare = pd.concat([y, y_raw], axis=1)
+y_compare = pd.concat([y, y_raw], axis=0)
 y_compare
 
 with st.expander('Input Features'):

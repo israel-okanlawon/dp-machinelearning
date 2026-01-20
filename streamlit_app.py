@@ -57,9 +57,9 @@ def target_encode(val):
   return target_mapper[val]
 
 y = y_raw.apply(target_encode)
-# y
-y_compare = pd.concat([y, y_raw], axis=1)
-y_compare
+y
+y_raw
+
 
 with st.expander('Input Features'):
   st.write('**Input penguin**')

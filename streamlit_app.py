@@ -57,6 +57,7 @@ def target_encode(val):
   return target_mapper[val]
 
 y = y_raw.apply(target_encode)
+y = y.rename(columns={'species': 'new_species'})
 y_compare = pd.concat([y, y_raw], axis=1)
 y_compare
 

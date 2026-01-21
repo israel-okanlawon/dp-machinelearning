@@ -92,8 +92,8 @@ prediction_prob = clf.predict_proba(input_row)
 
 df_prediction_proba = pd.DataFrame(prediction_proba)
 df_prediction_proba.columns = ['adelie', 'Chinstarp', 'Gentoo']
-df_prediction_proba.rename[columns={0: 'Adelie',
+df_prediction_proba.rename(columns={0: 'Adelie',
                                    a: 'Chinstrap',
-                                   2: 'Gentoo'}]
+                                   2: 'Gentoo'})
 
 

@@ -66,7 +66,9 @@ target_mapper = {'Adelie': 0,
 
 # y = y_raw.apply(target_encode)
 
-y = y_raw.apply(lambda val: target_mapper[val])
+# y = y_raw.apply(lambda val: target_mapper[val])
+
+y = y_raw.map(target_mapper)
 
 with st.expander('Data Preparation'):
   st.write('**Encoded X (input penguin)**')
